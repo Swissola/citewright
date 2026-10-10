@@ -10,9 +10,11 @@ Most organisations are using AI. Far fewer can show it is paying off. The eviden
 
 - **Using it is not the problem.** 88.3% of surveyed organisations use AI tools daily or weekly [[7]](references.md#ref-7), yet 44.7% do not formally measure the impact [[7]](references.md#ref-7). In quality engineering, only 15% of organisations pursuing generative AI have reached enterprise-wide implementation [[8]](references.md#ref-8).
 - **Do not trust how it feels.** In a 2025 randomised trial, developers believed AI had made them 20% faster while their tasks took 19% longer [[4]](references.md#ref-4). The trial was small, and its authors say the result may now be out of date, but the gap between belief and measurement is the point.
+
+  ![Bar chart of change in task time with AI. Developers forecast 24% faster and believed afterwards that they were 20% faster, but measured tasks took 19% longer.](assets/metr-belief-vs-measured.svg)
 - **Expect a dip before the gain.** DORA, Google Cloud's research programme, describes a temporary fall in productivity while people learn and the surrounding processes catch up, and advises budgeting for it [[2]](references.md#ref-2), [[3]](references.md#ref-3).
 - **Foundations decide the result.** DORA names seven organisational capabilities that amplify the benefit [[1]](references.md#ref-1). Prosci found motivation to use AI nearly identical in organisations that were succeeding and those that were stalling, so preparation matters more than enthusiasm [[9]](references.md#ref-9).
-- **The cost lands further down the line.** Vendor telemetry reports that, among organisations deepening already high adoption, time in QA rose 300.6% and monthly incidents rose 125.4% [[23]](references.md#ref-23). These are correlations from one vendor, not proof of cause, but they point to review and testing as the place to spend.
+- **The cost lands further down the line.** Vendor telemetry reports that, among organisations deepening already high adoption, time in QA rose 300.6% and monthly incidents rose 125.4% [[23]](references.md#ref-23). These are correlations from one vendor, not proof of cause, but they point to review and testing as the place to spend. One survey of leaders in large organisations found that none was very confident AI-generated code would behave correctly once deployed [[29]](references.md#ref-29).
 
 ## What you are being asked to decide
 
@@ -35,10 +37,10 @@ The two starting points differ in what comes first, not in the discipline. The t
 | **By about month 3 to 6** | Run two to three pilot cells with staggered starts, one champion each, and thresholds agreed in advance. | Treat the first 90 days as the baseline. Pilot agentic QA in a drafting role, behind deterministic checks. |
 | **The trap to avoid** | Piloting only on the hardest terrain, then deciding AI does not work. | Letting generation outrun review. |
 
-[Section 5](report.md#5-context-a-established-organisation) and [Section 6](report.md#6-context-b-early-stage-start-up) set out the full plans. Ready-made starting points for the stance, the pilot, the baseline and the decision rule are in the [templates](templates.md).
+[Section 5](report.md#5-context-a-established-organisation) and [Section 6](report.md#6-context-b-early-stage-start-up) set out the full plans. Ready-made starting points for the stance, the pilot, the baseline and the decision rule are in the [templates](templates.md), and a [ten-minute readiness check](readiness-check.md) helps choose where to start.
 
 ## How sure we are
 
-Moderately. Much of the quantitative evidence is survey data or vendor telemetry, and most of it is correlational. The one controlled trial is small. The agentic QA evidence is the thinnest of all, and the review found no independent controlled study of it. Read the recommendations as informed judgement, not as proven method.
+Moderately. Reasonably well supported: self-report overstates gains, and value is harder to show than use. Suspected but correlational: the early dip, the amplifying effect of foundations, and the downstream cost. Not known: whether agentic QA improves quality. Much of the quantitative evidence is survey data or vendor telemetry, and most of it is correlational. The one controlled trial is small. The agentic QA evidence is the thinnest of all, and the review found no independent controlled study of it. Read the recommendations as informed judgement, not as proven method.
 
 The advice would change if a controlled study in ordinary product teams showed a different pattern, or if the full vendor reports turned out to say something other than their summaries. Those are the things to watch, and the report recommends reviewing the evidence quarterly.

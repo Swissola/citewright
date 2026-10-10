@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 312" width="720" height="312" role="img" aria-labelledby="t d">
+  <title id="t">Developers' sense of speed did not match the measurement</title>
+  <desc id="d">Bar chart. Before the trial developers forecast AI would make them 24% faster. Afterwards they believed it had made them 20% faster. Measured, their tasks took 19% longer.</desc>
+  <style>
+    :root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --axis:#c3c2b7;
+            --blue:#2a78d6; --red:#e34948; --s1:#86b6ef; --s2:#3987e5; --s3:#1c5cab; --s4:#0d366b; }
+    @media (prefers-color-scheme: dark) {
+      :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --axis:#383835;
+              --blue:#3987e5; --red:#e66767; --s1:#184f95; --s2:#256abf; --s3:#3987e5; --s4:#6da7ec; }
+    }
+    text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink2); font-size: 13px; }
+    .title { fill: var(--ink); font-size: 16px; font-weight: 600; }
+    .strong { fill: var(--ink); font-weight: 600; }
+    .small { font-size: 12px; }
+    .muted { fill: var(--muted); font-size: 12px; }
+  </style>
+  <rect width="720" height="312" rx="8" fill="var(--surface)"/>
+  <text x="24" y="32" class="title">Developers' sense of speed did not match the measurement</text>
+  <text x="24" y="53" class="small">Change in task time with AI tools. METR, 2025 randomised trial.</text>
+  <text x="350" y="92" text-anchor="end" class="muted">Less time with AI</text>
+  <text x="370" y="92" text-anchor="start" class="muted">More time with AI</text>
+  <line x1="360" y1="100" x2="360" y2="268" stroke="var(--axis)" stroke-width="1"/>
+  <text x="24" y="116">Forecast before the trial</text>
+  <path d="M360 124 H196 Q192 124 192 128 V144 Q192 148 196 148 H360 Z" fill="var(--blue)"/>
+  <text x="184" y="141" text-anchor="end" class="strong">24% faster</text>
+  <text x="24" y="172">Belief after the trial</text>
+  <path d="M360 180 H224 Q220 180 220 184 V200 Q220 204 224 204 H360 Z" fill="var(--blue)"/>
+  <text x="212" y="197" text-anchor="end" class="strong">20% faster</text>
+  <text x="24" y="228">Measured</text>
+  <path d="M360 236 H489 Q493 236 493 240 V256 Q493 260 489 260 H360 Z" fill="var(--red)"/>
+  <text x="501" y="253" text-anchor="start" class="strong">19% slower</text>
+  <text x="24" y="296" class="muted">Source: METR (2025), reference 4. 16 experienced developers, 246 issues.</text>
+</svg>

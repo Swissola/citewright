@@ -3,7 +3,7 @@ message: "If you cite this report, please use these details."
 title: "citewright: an evidence-graded review of AI adoption in software organisations"
 authors:
   - name: "Swissola"
-version: 1.1.1
+version: 1.1.2
 date-released: 2026-10-10
 license: CC-BY-4.0
 url: "https://github.com/Swissola/citewright"

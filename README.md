@@ -10,12 +10,12 @@ points: an established organisation and a start-up about two years old. Every
 figure is attributed to a source and graded for strength, and anything that is
 the author's judgement is labelled as such.
 
-*Evidence current to 10 October 2026. Edition: v1.1.1.*
+*Evidence current to 10 October 2026. Edition: v1.1.2.*
 
 ## Start here
 
 - **Short on time:** read the [executive brief](executive-brief.md), two pages.
-- **Planning a rollout:** Sections 4 to 8 of the report, then the [templates](templates.md).
+- **Planning a rollout:** Sections 4 to 8 of the report, the [readiness check](readiness-check.md) to choose a first move, then the [templates](templates.md).
 - **Sceptical of a number:** go straight to the evidence register.
 
 ## What is in this repository
@@ -24,6 +24,7 @@ the author's judgement is labelled as such.
 | --- | --- |
 | [executive-brief.md](executive-brief.md) | Two-page summary for decision makers |
 | [report.md](report.md) | The full report |
+| [readiness-check.md](readiness-check.md) | Thirteen questions to choose a first move |
 | [templates.md](templates.md) | Starting points for the AI stance, pilot card, baseline sheet, decision log and more |
 | [evidence-register.md](evidence-register.md) | Every headline figure with its source, grade and caveat |
 | [references.md](references.md) | Numbered sources with access dates |

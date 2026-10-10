@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 242" width="720" height="242" role="img" aria-labelledby="t d">
+  <title id="t">Context B: fast but gated, over about six months</title>
+  <desc id="d">Four phases for a start-up: stance and foundations in days 0 to 30, baseline and evaluation in days 30 to 90, embed in defaults in days 90 to 180, scale by risk after day 180.</desc>
+  <style>
+    :root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --axis:#c3c2b7;
+            --blue:#2a78d6; --red:#e34948; --s1:#86b6ef; --s2:#3987e5; --s3:#1c5cab; --s4:#0d366b; }
+    @media (prefers-color-scheme: dark) {
+      :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --axis:#383835;
+              --blue:#3987e5; --red:#e66767; --s1:#184f95; --s2:#256abf; --s3:#3987e5; --s4:#6da7ec; }
+    }
+    text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink2); font-size: 13px; }
+    .title { fill: var(--ink); font-size: 16px; font-weight: 600; }
+    .strong { fill: var(--ink); font-weight: 600; }
+    .small { font-size: 12px; }
+    .muted { fill: var(--muted); font-size: 12px; }
+  </style>
+  <rect width="720" height="242" rx="8" fill="var(--surface)"/>
+  <text x="24" y="32" class="title">Context B: fast but gated, over about six months</text>
+  <text x="24" y="53" class="small">Each phase ends on evidence agreed in advance.</text>
+  <text x="24" y="86" class="strong small">0 Stance and foundations</text>
+  <rect x="24" y="96" width="166" height="24" rx="4" fill="var(--s1)"/>
+  <text x="24" y="140">Days 0 to 30</text>
+  <text x="24" y="160" class="muted">Stance, data rules</text>
+  <text x="24" y="176" class="muted">and lead in place</text>
+  <text x="192" y="86" class="strong small">1 Baseline and evaluation</text>
+  <rect x="192" y="96" width="166" height="24" rx="4" fill="var(--s2)"/>
+  <text x="192" y="140">Days 30 to 90</text>
+  <text x="192" y="160" class="muted">Baseline report and</text>
+  <text x="192" y="176" class="muted">evaluation set in use</text>
+  <text x="360" y="86" class="strong small">2 Embed in defaults</text>
+  <rect x="360" y="96" width="166" height="24" rx="4" fill="var(--s3)"/>
+  <text x="360" y="140">Days 90 to 180</text>
+  <text x="360" y="160" class="muted">No agent change merged</text>
+  <text x="360" y="176" class="muted">without a named owner</text>
+  <text x="528" y="86" class="strong small">3 Scale by risk</text>
+  <rect x="528" y="96" width="166" height="24" rx="4" fill="var(--s4)"/>
+  <text x="528" y="140">After day 180</text>
+  <text x="528" y="160" class="muted">Outcomes sustained</text>
+  <text x="528" y="176" class="muted">for two quarters</text>
+  <text x="24" y="226" class="muted">Phases are not to scale. Timings are indicative, the author's judgement.</text>
+</svg>

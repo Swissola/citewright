@@ -28,3 +28,6 @@ scratch/
 .env.*
 # Raw export of the report, kept locally
 report-source.md
+
+# Browser automation output (Playwright traces, snapshots, downloads)
+.playwright-mcp/

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 242" width="720" height="242" role="img" aria-labelledby="t d">
+  <title id="t">Context A: staged over 12 to 18 months</title>
+  <desc id="d">Four phases for an established organisation: foundation and baseline in weeks 0 to 8, pilot in weeks 8 to 24, scale in months 6 to 12, embed in months 12 to 18.</desc>
+  <style>
+    :root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --axis:#c3c2b7;
+            --blue:#2a78d6; --red:#e34948; --s1:#86b6ef; --s2:#3987e5; --s3:#1c5cab; --s4:#0d366b; }
+    @media (prefers-color-scheme: dark) {
+      :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --axis:#383835;
+              --blue:#3987e5; --red:#e66767; --s1:#184f95; --s2:#256abf; --s3:#3987e5; --s4:#6da7ec; }
+    }
+    text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink2); font-size: 13px; }
+    .title { fill: var(--ink); font-size: 16px; font-weight: 600; }
+    .strong { fill: var(--ink); font-weight: 600; }
+    .small { font-size: 12px; }
+    .muted { fill: var(--muted); font-size: 12px; }
+  </style>
+  <rect width="720" height="242" rx="8" fill="var(--surface)"/>
+  <text x="24" y="32" class="title">Context A: staged over 12 to 18 months</text>
+  <text x="24" y="53" class="small">Each phase ends on evidence agreed in advance.</text>
+  <text x="24" y="86" class="strong small">0 Foundation and baseline</text>
+  <rect x="24" y="96" width="166" height="24" rx="4" fill="var(--s1)"/>
+  <text x="24" y="140">Weeks 0 to 8</text>
+  <text x="24" y="160" class="muted">Stance published,</text>
+  <text x="24" y="176" class="muted">baseline in place</text>
+  <text x="192" y="86" class="strong small">1 Pilot</text>
+  <rect x="192" y="96" width="166" height="24" rx="4" fill="var(--s2)"/>
+  <text x="192" y="140">Weeks 8 to 24</text>
+  <text x="192" y="160" class="muted">Pre-agreed thresholds</text>
+  <text x="192" y="176" class="muted">met in pilot cells</text>
+  <text x="360" y="86" class="strong small">2 Scale</text>
+  <rect x="360" y="96" width="166" height="24" rx="4" fill="var(--s3)"/>
+  <text x="360" y="140">Months 6 to 12</text>
+  <text x="360" y="160" class="muted">Outcomes at parity</text>
+  <text x="360" y="176" class="muted">or better</text>
+  <text x="528" y="86" class="strong small">3 Embed</text>
+  <rect x="528" y="96" width="166" height="24" rx="4" fill="var(--s4)"/>
+  <text x="528" y="140">Months 12 to 18</text>
+  <text x="528" y="160" class="muted">Outcomes sustained</text>
+  <text x="528" y="176" class="muted">for two quarters</text>
+  <text x="24" y="226" class="muted">Phases are not to scale. Timings are indicative, the author's judgement.</text>
+</svg>

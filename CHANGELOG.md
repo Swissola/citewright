@@ -1,5 +1,46 @@
 # Changelog
 
+## v1.1.2 (10 October 2026)
+
+Evidence:
+
+- Read in full and linked, with archive captures where the archive would take
+  them: the LinearB, DX Q2, Undo, Faros (both), Lightrun, World Quality Report
+  and PractiTest 2024 and 2025 reports. Section 2, the Section 9 source-access
+  table and the register caveats now say how each source was read.
+- The Faros reports settle the earlier ambiguity: pull requests merged without
+  any review are up 31.3% (April) and up 76.3% (September), both rises. That
+  register row moves from grade C to B.
+- Two Faros statements corrected to the full reports: the rise in code churn is
+  smaller (71.6% against 861% before), not "improving", and agentic review
+  covers 26% of pull requests, over 50% at many companies, not 50% to 80%.
+- Caveats added, with no other figure changed: LinearB's 71.6% and 88.3%
+  adoption figures measure different things; the DX summary and body disagree on
+  average time saved; the World Quality Report's 37% and 52% describe AI
+  assistants and copilots for QA tasks; the Undo survey covered 300 engineering
+  directors and managers; the Lightrun figures are averages of respondents'
+  estimates.
+- New Lightrun findings: no leader very confident in AI-generated code once
+  deployed, 38% of developer time on debugging and verification, a gap between
+  directors and VPs, and AI incident tools stuck at pilot (Sections 3.1, 3.4 and
+  8.4, the executive brief and three register rows).
+
+Reading and use:
+
+- New readiness-check.md: thirteen questions and a guide to reading the pattern
+  of answers.
+- New "how firm" table at the start of Section 9, repeated in short in the
+  executive brief.
+- Section 3 trimmed by about 15% (2,860 to about 2,460 words), mostly secondary
+  figures. Detail left out of the text stays in the evidence register.
+- Three charts and two phase timelines added as SVGs in assets/: the METR
+  belief and measurement gap, a schematic J-curve, and the phases for each
+  context. They appear in Sections 3.2, 3.3, 5.2 and 6.2 and the executive
+  brief.
+
+Housekeeping: .gitignore now excludes .playwright-mcp/. No source or grade
+changed apart from the Faros row above.
+
 ## v1.1.1 (10 October 2026)
 
 - New [executive-brief.md](executive-brief.md): a two-page summary for decision

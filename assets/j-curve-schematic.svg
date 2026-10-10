@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 318" width="720" height="318" role="img" aria-labelledby="t d">
+  <title id="t">The J-curve: a dip before the gain</title>
+  <desc id="d">Schematic line chart with no data. Productivity starts at a baseline, dips while people learn and processes adapt, then rises above the starting level.</desc>
+  <style>
+    :root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --axis:#c3c2b7;
+            --blue:#2a78d6; --red:#e34948; --s1:#86b6ef; --s2:#3987e5; --s3:#1c5cab; --s4:#0d366b; }
+    @media (prefers-color-scheme: dark) {
+      :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --axis:#383835;
+              --blue:#3987e5; --red:#e66767; --s1:#184f95; --s2:#256abf; --s3:#3987e5; --s4:#6da7ec; }
+    }
+    text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink2); font-size: 13px; }
+    .title { fill: var(--ink); font-size: 16px; font-weight: 600; }
+    .strong { fill: var(--ink); font-weight: 600; }
+    .small { font-size: 12px; }
+    .muted { fill: var(--muted); font-size: 12px; }
+  </style>
+  <rect width="720" height="318" rx="8" fill="var(--surface)"/>
+  <text x="24" y="32" class="title">The J-curve: a dip before the gain</text>
+  <text x="24" y="53" class="small">Schematic, not data. The size and length of the dip vary, so none is shown.</text>
+  <text x="60" y="84" class="muted">Productivity</text>
+  <line x1="60" y1="150" x2="680" y2="150" stroke="var(--axis)" stroke-width="1"/>
+  <line x1="60" y1="96" x2="60" y2="250" stroke="var(--axis)" stroke-width="1"/>
+  <line x1="60" y1="250" x2="680" y2="250" stroke="var(--axis)" stroke-width="1"/>
+  <text x="68" y="143" class="muted">Starting level</text>
+  <path d="M60 150 C130 150 170 212 250 212 S400 150 480 118 S620 84 680 76" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="680" cy="76" r="5" fill="var(--blue)" stroke="var(--surface)" stroke-width="2"/>
+  <text x="250" y="238" text-anchor="middle">Learning, verification, process change</text>
+  <text x="640" y="68" text-anchor="end">Returns, if the foundations are in place</text>
+  <text x="680" y="270" text-anchor="end" class="muted">Time</text>
+  <text x="24" y="302" class="muted">After DORA, ROI of AI-assisted software development (2026), references 2 and 3.</text>
+</svg>
