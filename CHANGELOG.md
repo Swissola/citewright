@@ -1,5 +1,24 @@
 # Changelog
 
+## v1.1.1 (10 October 2026)
+
+- New [executive-brief.md](executive-brief.md): a two-page summary for decision
+  makers, using only figures already in the report and register.
+- New [templates.md](templates.md): six starting points (AI stance, pilot
+  hypothesis card, baseline sheet, decision rule and log, verification lead,
+  pull request addition), all labelled as the author's judgement.
+- README and the top of the report point to both.
+- Reference 3 now also links the full DORA ROI report PDF, with an archive
+  capture. Reference 28 now has an archive capture, so every source URL has one.
+- Section 3.5 and the evidence register give the Stack Overflow figure on
+  optional AI use as "about three in ten", which is what the available source
+  says. The decimal could not be traced.
+- Adjacent citations are now separated by a comma, which also clears a
+  markdownlint warning. No citation was added or removed.
+- Both workflows now use actions/checkout v7.
+- The Faros unreviewed-merge ambiguity stands. The full Faros reports are gated
+  and could not be read.
+
 ## v1.1.0 (10 October 2026)
 
 - Wayback Machine capture links added beside 33 of the 34 source URLs in
