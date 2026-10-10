@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Quarterly reminder added: a scheduled workflow opens an issue on the first of
+  January, April, July and October, assigned to the repository owner, with the
+  refresh checklist in .github/refresh-checklist.md. It can also be run by hand
+  as a dry run.
+
 ## v1.1.2 (10 October 2026)
 
 Evidence:
