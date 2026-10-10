@@ -1,0 +1,28 @@
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Word and office lock files
+~$*
+.~lock.*
+
+# Scratch and temporary files
+*.tmp
+*.bak
+*.log
+_drafts/
+scratch/
+
+# Private notes and local config (never tracked)
+.local/
+
+# Secrets and local config
+.env
+.env.*

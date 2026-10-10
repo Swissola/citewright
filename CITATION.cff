@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you cite this report, please use these details."
+title: "citewright: an evidence-graded review of AI adoption in software organisations"
+authors:
+  - name: "Swissola"
+version: 1.0.0
+date-released: 2026-10-10
+license: CC-BY-4.0
+url: "https://github.com/Swissola/citewright"
+keywords:
+  - ai-adoption
+  - quality-engineering
+  - evidence-review
