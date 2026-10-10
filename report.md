@@ -2,13 +2,27 @@
 
 Oct 10, 2026 · Swissola
 
+## Contents
+
+- [Abstract](#abstract)
+- [1 Introduction and scope](#1-introduction-and-scope)
+- [2 Method and evidence grading](#2-method-and-evidence-grading)
+- [3 Findings: what the evidence shows](#3-findings-what-the-evidence-shows)
+- [4 Practices common to both contexts](#4-practices-common-to-both-contexts)
+- [5 Context A: established organisation](#5-context-a-established-organisation)
+- [6 Context B: early-stage start-up](#6-context-b-early-stage-start-up)
+- [7 Comparative analysis](#7-comparative-analysis)
+- [8 Baselining and evaluation framework](#8-baselining-and-evaluation-framework)
+- [9 Limitations and evidence gaps](#9-limitations-and-evidence-gaps)
+- [10 Conclusions and recommendations](#10-conclusions-and-recommendations)
+
 ## Abstract
 
 A staged, verification-led approach is the best-supported way to drive AI adoption in both contexts, but the two organisations need different first moves. The established company must change habits across an uneven workforce. The early-stage company must build foundations before speed outruns assurance.
 
 **Purpose.** To compare how AI adoption, including agentic quality assurance, should be driven in (A) an established organisation and (B) a start-up about two years old.
 
-**Method.** A structured review of primary and secondary sources current to 10 October 2026. Each source is graded for evidence strength (Section 2). Recommendations are labelled as the author's judgement wherever no study directly supports them.
+**Method.** A structured review of primary and secondary sources current to 10 October 2026. Each source is graded for evidence strength ([Section 2](#2-method-and-evidence-grading)). Recommendations are labelled as the author's judgement wherever no study directly supports them.
 
 **Principal findings.**
 
@@ -18,9 +32,9 @@ A staged, verification-led approach is the best-supported way to drive AI adopti
 - Preparation, not motivation, separates success from stalling. Prosci found motivation to use AI nearly identical in succeeding and stalling organisations [[9]](references.md#ref-9).
 - Agent-written code is often under-tested. In one 2026 preprint of 4,882 agent-generated pull requests, agents included test changes in only 49.6% of those that changed code under test [[17]](references.md#ref-17).
 
-**Recommendations.** Eight practices apply in both contexts (Section 4). Context A starts by segmenting its estate and piloting where AI performs best (Section 5). Context B starts by fixing foundations and building evaluation into the product (Section 6). Both should baseline first, measure delivered outcomes rather than usage, and decide on thresholds agreed in advance (Section 8).
+**Recommendations.** Eight practices apply in both contexts ([Section 4](#4-practices-common-to-both-contexts)). Context A starts by segmenting its estate and piloting where AI performs best ([Section 5](#5-context-a-established-organisation)). Context B starts by fixing foundations and building evaluation into the product ([Section 6](#6-context-b-early-stage-start-up)). Both should baseline first, measure delivered outcomes rather than usage, and decide on thresholds agreed in advance ([Section 8](#8-baselining-and-evaluation-framework)).
 
-**Confidence.** Moderate. Much of the evidence is survey data or vendor telemetry, and most of it is correlational (Section 9). Evidence from the last six months (Section 3.7) is almost all vendor-produced. It points to per-change risk stabilising while QA and operational load keep rising.
+**Confidence.** Moderate. Much of the evidence is survey data or vendor telemetry, and most of it is correlational ([Section 9](#9-limitations-and-evidence-gaps)). Evidence from the last six months ([Section 3.7](#37-evidence-from-the-last-six-months)) is almost all vendor-produced. It points to per-change risk stabilising while QA and operational load keep rising.
 
 ## 1 Introduction and scope
 
@@ -42,11 +56,11 @@ Adoption has outpaced the measurement of its value: 44.7% of surveyed organisati
 
 ## 2 Method and evidence grading
 
-Every figure in this report was taken from a retrieved source page and is attributed to it. Sources available only as an abstract, summary or excerpt are identified in Section 9. Where a secondary source and a primary source disagreed, the primary source was used.
+Every figure in this report was taken from a retrieved source page and is attributed to it. Sources available only as an abstract, summary or excerpt are identified in [Section 9](#9-limitations-and-evidence-gaps). Where a secondary source and a primary source disagreed, the primary source was used.
 
 **Sources.** Web searches covered adoption research (DORA, METR, Prosci), delivery telemetry (LinearB), quality engineering surveys (World Quality Report), and academic work on testing agent-written code. Primary pages were retrieved wherever they were accessible. Two sources were available only as summaries: the DORA ROI report (read through its landing page and trade-press coverage) and the World Quality Report (read through its press release).
 
-**Conflict handling.** Secondary commentary disagrees about the direction of one headline METR figure. The primary METR page was used to settle it (Section 3.2).
+**Conflict handling.** Secondary commentary disagrees about the direction of one headline METR figure. The primary METR page was used to settle it ([Section 3.2](#32-perceived-and-measured-gains-diverge)).
 
 **Labels.** Findings are tagged by evidence grade. Statements of what the author would do, or why, are tagged *Judgement*.
 
@@ -56,7 +70,7 @@ Every figure in this report was taken from a retrieved source page and is attrib
 | B | Large survey or telemetry, often vendor or sponsor produced, correlational | DORA [[1]](references.md#ref-1)[[12]](references.md#ref-12), LinearB [[7]](references.md#ref-7), World Quality Report [[8]](references.md#ref-8), METR survey [[6]](references.md#ref-6), agentic pull request studies [[16]](references.md#ref-16)[[17]](references.md#ref-17), 2026 telemetry and surveys [[22]](references.md#ref-22) to [[31]](references.md#ref-31) |
 | C | Case study, conference talk, practitioner or legal commentary | Prosci [[9]](references.md#ref-9)[[10]](references.md#ref-10), Stanford talk [[15]](references.md#ref-15), practitioner guides [[18]](references.md#ref-18)[[20]](references.md#ref-20)[[21]](references.md#ref-21), legal summary [[19]](references.md#ref-19) |
 
-**Exclusions.** Claims that could not be traced to a primary source or a clearly attributable secondary source were left out. The principal gaps are listed in Section 9.
+**Exclusions.** Claims that could not be traced to a primary source or a clearly attributable secondary source were left out. The principal gaps are listed in [Section 9](#9-limitations-and-evidence-gaps).
 
 ## 3 Findings: what the evidence shows
 
@@ -105,7 +119,7 @@ DORA's 2026 ROI report adds a J-curve: most organisations should expect a tempor
 
 Telemetry from 8.1 million pull requests points the same way. AI pull requests were merged within 30 days 32.7% of the time, against 84.4% for unassisted work. Agent-created pull requests waited 17.6 hours for review (75th percentile), against 3.4 hours for unassisted work [[7]](references.md#ref-7). LinearB states that these relationships are correlational [[7]](references.md#ref-7).
 
-The amplifier claim is contested. Faros's 2026 telemetry reports that high-performing organisations experienced the same downstream deterioration as others [[22]](references.md#ref-22), whereas DORA's finding rests on survey data [[1]](references.md#ref-1). Section 3.7 sets out the newer evidence.
+The amplifier claim is contested. Faros's 2026 telemetry reports that high-performing organisations experienced the same downstream deterioration as others [[22]](references.md#ref-22), whereas DORA's finding rests on survey data [[1]](references.md#ref-1). [Section 3.7](#37-evidence-from-the-last-six-months) sets out the newer evidence.
 
 The effect also varies by context. A Stanford researcher's analysis of nearly 100,000 developers reported gains of 30% to 40% on low-complexity greenfield tasks and 0% to 10% on high-complexity brownfield tasks, with an average of 15% to 20% [[15]](references.md#ref-15). The DORA ROI report, as summarised by InfoQ, cites the same research programme: 35% to 40% on simple greenfield tasks and 10% or less on complex legacy code [[2]](references.md#ref-2). *Evidence grades: B [[1]](references.md#ref-1)[[2]](references.md#ref-2)[[7]](references.md#ref-7); C for the Stanford figures, which come from a conference talk. I did not locate a peer-reviewed publication [[15]](references.md#ref-15).*
 
@@ -116,7 +130,7 @@ Clear policy, protected learning time and honest handling of job concerns are th
 - **Policy, learning time, transparency.** DORA's 2024 research estimated that clear AI acceptable-use policies were associated with a 451% increase in AI adoption, dedicated learning time with a 131% increase, and transparent communication with an 11.4% increase [[12]](references.md#ref-12). These are DORA's modelled estimates from survey data, not experimental effects.
 - **Concern and trust.** Nearly 15% of DORA respondents expected AI to harm their careers, which DORA suggests may drive reactive rather than genuine adoption [[11]](references.md#ref-11). Outside Google, 39% of surveyed developers trusted the quality of AI output only a little or not at all, and developers who trust AI more use it more [[13]](references.md#ref-13).
 - **A worked case.** AT&T scaled Microsoft 365 Copilot to more than 18,000 active users in six weeks, with 96.4% sustained adoption among assigned users. It first defined adoption as at least one active use in 30 days, monitored daily, and treated that as a floor rather than a ceiling. It ran more than 200 live training sessions, routed job-displacement concerns to supervisors with prepared talk tracks, and built a deliberately conservative ROI method from surveys, focus groups and usage data [[9]](references.md#ref-9). The case is published by a change-management vendor and concerns a general productivity assistant, not an engineering tool.
-- **Champion networks.** Prosci reports that organisations deploying change agent networks met or exceeded their objectives more often than those that did not [[10]](references.md#ref-10). I found no verified evidence for a specific champion-to-staff ratio (Section 9).
+- **Champion networks.** Prosci reports that organisations deploying change agent networks met or exceeded their objectives more often than those that did not [[10]](references.md#ref-10). I found no verified evidence for a specific champion-to-staff ratio ([Section 9](#9-limitations-and-evidence-gaps)).
 - **Usage targets.** In June 2026 DORA warned that rewarding raw AI token consumption may nudge hesitant developers to experiment, but that treating token spend as a performance indicator is a trap [[14]](references.md#ref-14).
 
 *Evidence grades: B [[11]](references.md#ref-11)[[12]](references.md#ref-12)[[13]](references.md#ref-13); C [[9]](references.md#ref-9)[[10]](references.md#ref-10)[[14]](references.md#ref-14).*
@@ -130,7 +144,7 @@ Quality engineering is where AI output most needs an independent check, and the 
 - **Coverage of agent-written changes.** A July 2026 preprint analysed 4,882 agent-generated pull requests from five agents. Agents included test changes in 49.6% of pull requests that changed code under test. Existing tests covered 61.5% of changed executable lines in Java but only 27.0% in Python, where 64.8% of pull requests had no changed line executed by any existing test. Agent-written tests improved coverage in a minority of pull requests: 35.9% in Java and 22.5% in Python [[17]](references.md#ref-17).
 - **Practitioner guidance.** One 2026 pilot guide argues that an independent oracle should be the architectural centre of agentic testing: agents discover and draft, while deterministic checks and accountable people decide whether software passes. It advises counting accepted evidence and defects caught, not files generated [[18]](references.md#ref-18). For AI products, a 2026 conference account argues that exact-match oracles fail for non-deterministic behaviour and proposes checking a bounded behavioural envelope covering preserved intent, policy adherence and an explainable trace [[20]](references.md#ref-20).
 
-The review located no independent controlled study of agentic QA or self-healing test frameworks (Section 9). *Evidence grades: B [[8]](references.md#ref-8)[[16]](references.md#ref-16)[[17]](references.md#ref-17); C [[18]](references.md#ref-18)[[20]](references.md#ref-20).*
+The review located no independent controlled study of agentic QA or self-healing test frameworks ([Section 9](#9-limitations-and-evidence-gaps)). *Evidence grades: B [[8]](references.md#ref-8)[[16]](references.md#ref-16)[[17]](references.md#ref-17); C [[18]](references.md#ref-18)[[20]](references.md#ref-20).*
 
 ### 3.6 UK legal and workforce considerations
 
@@ -141,7 +155,7 @@ Personal data and staff consultation shape what can be adopted and how fast. The
 The newest evidence, almost all of it produced by vendors, shows adoption near saturation, per-change risk stabilising, and the verification burden moving towards QA and operations. It was gathered after the main review and updates several findings above.
 
 - **Adoption and agents.** DX reports industry AI adoption of 93% in its Q1 2026 report [[24]](references.md#ref-24). In Stack Overflow's 2026 survey, 17.2% of developers did not use AI tools and 26.2% used automated agent workflows [[26]](references.md#ref-26). McKinsey's September 2026 survey found 40% of respondents from large organisations scaling AI agents, up from 27% a year earlier, and about two in ten respondents scaling coding agents [[25]](references.md#ref-25). In testing, one survey series shows the trajectory: 60% of 2024 participants did not use AI for testing [[30]](references.md#ref-30), 45.65% had not integrated it by 2025 [[31]](references.md#ref-31), and 76.8% of testers reported using AI in 2026 [[21]](references.md#ref-21).
-- **Policy gap.** Only 24% of Stack Overflow's 2026 respondents said their employer had published approved tools or formal AI guidance, and 29.7% said AI use was optional and left to the individual [[26]](references.md#ref-26). This supports Practice 1 in Section 4.
+- **Policy gap.** Only 24% of Stack Overflow's 2026 respondents said their employer had published approved tools or formal AI guidance, and 29.7% said AI use was optional and left to the individual [[26]](references.md#ref-26). This supports Practice 1 in [Section 4](#4-practices-common-to-both-contexts).
 - **Value at organisation level.** McKinsey found 37% of respondents attributing some EBIT impact to AI, about the same as in 2025, despite more organisations scaling [[25]](references.md#ref-25). DX's Q2 2026 report found heavy users saving over 6 hours a week (self-reported) and median throughput up 37% over four quarters, from 1.42 to 1.94 pull requests per engineer per week, while the share of time on new feature work held at roughly 57% to 58% [[24]](references.md#ref-24). Faros's April 2026 telemetry showed epics completed per developer up 66% and task throughput up 33.7% [[22]](references.md#ref-22).
 - **Quality and stability.** Faros's April 2026 report found bugs per developer up 54% and the incidents-to-pull-request ratio up 242.7%, comparing each organisation's lowest and highest AI adoption periods [[22]](references.md#ref-22). Its September 2026 follow-up examines the latest 12 months as organisations deepened already-high adoption. It found incidents per pull request up only 14.5%, with deployment frequency and code churn improving, but monthly incidents up 125.4%, time in QA up 300.6% and average pull request size up 71.8% [[23]](references.md#ref-23). Faros states that its findings are correlational [[23]](references.md#ref-23).
 - **Review and verification.** Faros reported pull requests merged without review up 31.3% in April [[22]](references.md#ref-22) and gives the figure as 76.3% in September [[23]](references.md#ref-23). Its article and its FAQ describe this differently (a rise versus a share of pull requests), so the figure should not be quoted without checking the full report. A survey by Coleman Parkes for Undo, which sells debugging tools, found 35% of AI-generated code reaches production before the team fully understands it [[27]](references.md#ref-27), and 79% of engineering leaders said release cycles were no faster [[28]](references.md#ref-28). A Lightrun survey of 200 SRE and DevOps leaders found 43% of AI-generated code needed manual debugging in production, including code that had passed QA or staging tests [[29]](references.md#ref-29).
@@ -170,7 +184,7 @@ Two cautions apply to every row (Judgement). First, the evidence is strongest fo
 
 ## 5 Context A: established organisation
 
-In an established organisation with a mixed estate, the first task is to match AI to the right work and the right people, then scale through peers and pairing rather than mandates. The plan below is the author's synthesis of the evidence in Section 3; no single study tested it end to end.
+In an established organisation with a mixed estate, the first task is to match AI to the right work and the right people, then scale through peers and pairing rather than mandates. The plan below is the author's synthesis of the evidence in [Section 3](#3-findings-what-the-evidence-shows); no single study tested it end to end.
 
 ### 5.1 Starting condition and what the evidence implies
 
@@ -187,7 +201,7 @@ Timings are indicative (Judgement).
 | Phase | Timing | Actions | Exit evidence |
 | --- | --- | --- | --- |
 | 0. Foundation and baseline | Weeks 0 to 8 | Publish the one-page AI stance. Segment the estate by work type (legacy system maintenance, newer standalone components, test-adjacent activity) and by role. Capture 8 to 12 weeks of existing delivery, review and quality data. Run a baseline survey of current use, confidence, trust and concerns. Consult employee representatives and the data protection lead. Agree a budget that expects an early dip [[2]](references.md#ref-2)[[3]](references.md#ref-3). | Stance published. Baseline dashboard exists. Pilot cells and hypotheses agreed in writing. |
-| 1. Pilot | Weeks 8 to 24 | Run two to three pilot cells with staggered starts: a team working on newer standalone components; a QA-led cell using AI for test design and regression triage around legacy systems; and a cell of staff new to AI on the first two rungs of the ladder (Section 5.3). One named champion per cell. Protected learning time. Weekly sharing of results. Tag AI-assisted and unassisted changes separately [[7]](references.md#ref-7). Plan review capacity in advance. | Pre-agreed thresholds on flow, quality and trust met against baseline. A written list of use cases that worked and that did not. |
+| 1. Pilot | Weeks 8 to 24 | Run two to three pilot cells with staggered starts: a team working on newer standalone components; a QA-led cell using AI for test design and regression triage around legacy systems; and a cell of staff new to AI on the first two rungs of the ladder ([Section 5.3](#53-the-skills-ladder-for-staff-without-repository-experience)). One named champion per cell. Protected learning time. Weekly sharing of results. Tag AI-assisted and unassisted changes separately [[7]](references.md#ref-7). Plan review capacity in advance. | Pre-agreed thresholds on flow, quality and trust met against baseline. A written list of use cases that worked and that did not. |
 | 2. Scale | Months 6 to 12 | Extend cell by cell, again staggered. Add a champion per team. Introduce pairing. Publish a use-case library from the pilots. Brief supervisors with talk tracks on job and skills concerns [[9]](references.md#ref-9). Introduce agentic QA only where a trustworthy oracle exists, for example stable regression suites and API checks. | Delivered outcomes at parity or better. No rise in escaped defects. Adoption depth growing by use case, not only by user count. |
 | 3. Embed | Months 12 to 18 | Update standards: definition of done, pull request templates, test strategy, role descriptions and learning pathways. Review quarterly. Retire initiatives that miss thresholds. Refresh the stance as tools change [[9]](references.md#ref-9). | Outcomes sustained for two consecutive quarters. |
 
@@ -215,11 +229,11 @@ Experienced testers and domain specialists hold the domain knowledge that functi
 
 ## 6 Context B: early-stage start-up
 
-In a young company the opportunity is to make verification a default before habits form, and the risk is that delivery speed outruns assurance. Because AI amplifies the system it enters [[1]](references.md#ref-1)[[2]](references.md#ref-2), a company with few foundations will amplify the gaps. The plan below is the author's synthesis of Section 3 (Judgement).
+In a young company the opportunity is to make verification a default before habits form, and the risk is that delivery speed outruns assurance. Because AI amplifies the system it enters [[1]](references.md#ref-1)[[2]](references.md#ref-2), a company with few foundations will amplify the gaps. The plan below is the author's synthesis of [Section 3](#3-findings-what-the-evidence-shows) (Judgement).
 
 ### 6.1 Starting condition and what the evidence implies
 
-1. **There is no resistance to overcome, but also no baseline.** Prior delivery and quality data may be thin, so measurement must be built, not retrieved (Section 8).
+1. **There is no resistance to overcome, but also no baseline.** Prior delivery and quality data may be thin, so measurement must be built, not retrieved ([Section 8](#8-baselining-and-evaluation-framework)).
 2. **Foundations come first.** DORA's capabilities include strong version control, small batches, quality internal platforms and AI-accessible internal data [[1]](references.md#ref-1). These are plausibly cheaper to establish in a young company than in a large one (Judgement).
 3. **Quality assurance may have two jobs.** It must assure AI-assisted engineering. Where the product itself contains AI components, it must also test non-deterministic behaviour, which practitioners argue needs behavioural-envelope oracles rather than exact-match checks [[20]](references.md#ref-20) (Grade C).
 4. **Agentic QA needs an independent check.** In one 2026 preprint, agents included test changes in under half of the qualifying pull requests [[17]](references.md#ref-17), and practitioner guidance places the independent oracle at the centre of agentic testing [[18]](references.md#ref-18).
@@ -245,7 +259,7 @@ The design principle is that agents may explore and draft, but accountable peopl
 - **Known-defect checks** inject faults and measure whether the suite detects them, which exposes false confidence.
 - **Evidence trail** records what was run, by whom, against which version.
 
-The review located no independent controlled evidence that self-healing test frameworks deliver measurable benefit at scale (Section 9). Treat them as unproven, and fix brittle test design before buying repair tooling.
+The review located no independent controlled evidence that self-healing test frameworks deliver measurable benefit at scale ([Section 9](#9-limitations-and-evidence-gaps)). Treat them as unproven, and fix brittle test design before buying repair tooling.
 
 ### 6.4 Risks specific to this context
 
@@ -354,7 +368,7 @@ AI adoption should be run as a verification-led change programme in both context
 1. Endorse a written AI stance with a named executive owner [[1]](references.md#ref-1)[[12]](references.md#ref-12).
 2. Approve protected learning time and an explicit budget for an early productivity dip [[2]](references.md#ref-2)[[3]](references.md#ref-3)[[12]](references.md#ref-12).
 3. Approve a baseline period before wider rollout: about 8 to 12 weeks of history in Context A, the first 90 days of new instrumentation in Context B (Judgement on durations) [[7]](references.md#ref-7).
-4. Adopt outcome-based measurement (Section 8.2) and do not use usage or token counts as performance targets [[14]](references.md#ref-14).
+4. Adopt outcome-based measurement ([Section 8.2](#82-measures-by-layer)) and do not use usage or token counts as performance targets [[14]](references.md#ref-14).
 5. Name accountable owners of verification, and require a named owner for every agent-created change [[7]](references.md#ref-7)[[18]](references.md#ref-18).
 6. Fund review capacity alongside generation capacity [[7]](references.md#ref-7).
 7. In Context A, pilot first on newer standalone components and test-adjacent work, with a skills ladder for staff who do not work with source code. In Context B, appoint a verification lead and build evaluation sets within 90 days (Judgement).
