@@ -10,7 +10,7 @@ points: an established organisation and a start-up about two years old. Every
 figure is attributed to a source and graded for strength, and anything that is
 the author's judgement is labelled as such.
 
-*Evidence current to 10 October 2026. Edition: v1.1.2.*
+*Evidence current to 10 October 2026. Edition: v1.1.3.*
 
 ## Start here
 
@@ -24,7 +24,7 @@ the author's judgement is labelled as such.
 | --- | --- |
 | [executive-brief.md](executive-brief.md) | Two-page summary for decision makers |
 | [report.md](report.md) | The full report |
-| [readiness-check.md](readiness-check.md) | Thirteen questions to choose a first move |
+| [readiness-check.md](readiness-check.md) | Fourteen questions to choose a first move |
 | [templates.md](templates.md) | Starting points for the AI stance, pilot card, baseline sheet, decision log and more |
 | [evidence-register.md](evidence-register.md) | Every headline figure with its source, grade and caveat |
 | [references.md](references.md) | Numbered sources with access dates |

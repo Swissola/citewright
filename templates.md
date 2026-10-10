@@ -1,6 +1,6 @@
 # Templates
 
-Seven starting points for putting the report's recommendations to work. They are the author's judgement (*Judgement*), not findings from a study, and they are not drawn from any particular organisation. Change anything that does not fit. Text in {braces} is a placeholder, and the example wording is there to show the level of detail to aim for.
+Eight starting points for putting the report's recommendations to work. They are the author's judgement (*Judgement*), not findings from a study, and they are not drawn from any particular organisation. Change anything that does not fit. Text in {braces} is a placeholder, and the example wording is there to show the level of detail to aim for.
 
 | Template | Report section it follows |
 | --- | --- |
@@ -11,6 +11,7 @@ Seven starting points for putting the report's recommendations to work. They are
 | [5 The verification lead](#5-the-verification-lead) | [Section 6.2](report.md#62-phased-plan) and [Section 6.3](report.md#63-agentic-qa-within-the-adoption-plan) |
 | [6 The pull request addition](#6-the-pull-request-addition) | Practices 3 and 5, [Section 4](report.md#4-practices-common-to-both-contexts) |
 | [7 The pulse survey](#7-the-pulse-survey) | The people layer, [Section 8.2](report.md#82-measures-by-layer) |
+| [8 The dashboard brief](#8-the-dashboard-brief) | [Section 8](report.md#8-baselining-and-evaluation-framework), especially [8.3](report.md#83-establishing-the-baseline-in-each-context) |
 
 ## 1 The one-page AI stance
 
@@ -91,7 +92,7 @@ Fill this in before anyone gets wider access. In an established organisation, us
 | Concern about skills or job security | People | Pulse survey | {value} | {date} | {name} |
 | Licence and usage cost | Cost and value | Finance | {value} | {date} | {name} |
 
-The measures follow the layers in [Section 8.2](report.md#82-measures-by-layer). Leave out any you cannot get rather than guessing, and note the gap.
+The measures follow the layers in [Section 8.2](report.md#82-measures-by-layer). Leave out any you cannot get rather than guessing, and note the gap. Also record how AI-assisted work is labelled (see [Section 8.3](report.md#83-establishing-the-baseline-in-each-context)) and the share of labels a hand check found to be right. Without that, the comparison of assisted with unassisted work has nothing under it.
 
 ## 4 The decision rule and log
 
@@ -149,6 +150,8 @@ Owner of this change (a named person): {name}
 What this was checked against: {requirement, test, reviewer's reading}
 Size and scope kept small enough to review properly:  [ ] yes
 ```
+
+Two things make the label checkable. Add a commit trailer convention, for example `Assisted-by: {tool}`, and give agents their own accounts instead of letting them commit as a person. Then spot-check a sample of labels by hand each month and record the share that were right. That share is your coverage figure, and it is what lets you say how much the label undercounts.
 
 ## 7 The pulse survey
 
@@ -217,3 +220,70 @@ About you (for grouping only)
 - Look for gaps between groups, such as developers against testers, or one workstream against another. They usually point at where the enablement is missing.
 - Watch questions 7, 8, 12 and 14 over the rounds. Falling trust or rising concern after a rollout is an early warning, and it is cheaper to hear it here than from attrition.
 - Questions 17 and 18 are the most useful answers. Read them all, and group them.
+
+## 8 The dashboard brief
+
+Many organisations now have, or are building, a dashboard of AI use, and increasingly an AI assistant is building it. A dashboard built that way looks authoritative whatever its accuracy, and if the same session writes the queries and judges them, a pass only shows the two agree with each other. This brief treats the dashboard the way the report treats everything AI produces: it needs a check that is independent of the thing being checked ([Section 3.6](report.md#36-quality-engineering-and-agentic-testing)). It follows [Section 8](report.md#8-baselining-and-evaluation-framework).
+
+Give it to the assistant at the start of each session, and fill in the braces. Keep internal data to the tools your organisation has approved for it.
+
+```text
+You are helping build and improve an internal dashboard that measures AI adoption in
+software delivery. The purpose is to tell leadership whether AI use is turning into
+better delivered outcomes, not just whether people are using it. Accuracy matters more
+than polish. A confident wrong number is worse than a gap.
+
+Principles
+- Measure outcomes, not just activity. Sessions, interactions and pull requests raised
+  show use. Pair every usage measure with an outcome measure (review time, merge rate,
+  change failure rate, escaped defects, time in QA).
+- Never invent data, fields or values. If something cannot be measured with the data
+  available, say so and list it as a gap.
+- Every number must be traceable to a named source and a query. Record the source,
+  the query or logic, the time window and the date it was last refreshed beside each
+  measure.
+
+Definitions (write these down before building anything)
+- Define precisely: session, AI interaction, active user, pull request, "AI-assisted",
+  "agent-created", "unassisted". Show the definitions on the dashboard.
+- Classify each pull request as AI-assisted, agent-created or unassisted. State how you
+  decide (for example commit trailers, bot authors, tool telemetry), how many pull
+  requests you cannot classify, and the likely undercount. Report the coverage.
+- Keep definitions stable. If one changes, record it, and mark the date on every chart
+  it affects.
+
+Segmentation
+- Split every measure by {workstreams}, by contribution type, and by week.
+- Where possible split by newer versus older code, since results differ by terrain.
+- Show the median and the 75th percentile, not only averages, and the number of people
+  or pull requests behind each figure.
+- Record the date each team started using AI, so teams can be compared with their own
+  earlier period.
+
+Validation (do this before showing any figure)
+- Reconcile counts against the source system for at least one team and one week.
+  Report any difference.
+- Check for duplicates, bots, test accounts, time zone errors and missing data. Say
+  how each was handled.
+- Plant a few known records and confirm the dashboard counts them correctly.
+- Re-run the key queries a second way and compare the answers.
+- List what the dashboard cannot tell us, and the three most likely ways it is wrong.
+
+Privacy
+- Show team-level aggregates. Do not rank individuals or publish per-person usage.
+- Do not suppress small groups silently. Show "fewer than {N} people" and hide the
+  breakdown.
+- Do not use token counts or usage as a performance measure.
+
+When you finish
+- Summarise what changed, what you checked, what you could not check, and what a
+  sceptical reader should ask. Do not claim a measure is validated unless you
+  actually checked it, and say how.
+```
+
+**Around the brief**
+
+- Use a second pair of eyes. Someone who did not build the dashboard, or a fresh session given only the definitions and the source data, should recompute a few figures independently.
+- Keep a written metrics dictionary and a short change log, so a number that moves can be explained as a real change and not a changed definition.
+- Add a "known limits" panel saying what the dashboard does not cover, such as unsanctioned tools or unclassified pull requests, so nobody reads absence as zero.
+- Review it with a few of the people it measures. A short session often finds misclassified pull requests faster than any test.

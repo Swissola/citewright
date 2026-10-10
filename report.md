@@ -346,7 +346,7 @@ Both organisations should baseline before expanding, measure delivered outcomes 
 ### 8.1 Principles
 
 1. **Baseline first.** LinearB advises capturing cycle time by phase, pull request size, acceptance rate and rework rate while current adoption is steady. It links the absence of a baseline to the finding that 44.7% of organisations do not formally measure AI impact while 76.1% of leaders report gains from adoption signals [[7]](references.md#ref-7).
-2. **Segment by contribution type.** Keep agent-created, AI-assisted and unassisted changes separate, because blended averages describe none of them [[7]](references.md#ref-7).
+2. **Segment by contribution type.** Keep agent-created, AI-assisted and unassisted changes separate, because blended averages describe none of them [[7]](references.md#ref-7). [Section 8.3](#83-establishing-the-baseline-in-each-context) covers how to label the work.
 3. **Judge outcomes, not activity.** Token counts and usage leaderboards are not performance measures [[14]](references.md#ref-14). Count accepted evidence and defects caught, not artefacts generated [[18]](references.md#ref-18).
 4. **Do not rely on self-report alone.** Self-assessed gains overstated measured effects in METR's work [[4]](references.md#ref-4), [[6]](references.md#ref-6).
 5. **Expect and budget for a dip.** Evaluate over a window long enough to pass the learning curve, and set its length in advance [[2]](references.md#ref-2), [[3]](references.md#ref-3) (Judgement on length).
@@ -367,6 +367,17 @@ Both organisations should baseline before expanding, measure delivered outcomes 
 
 - **Context A.** Use 8 to 12 weeks of existing delivery, review and defect history, held steady while the baseline is captured, and a first survey of use, trust and concerns (Judgement on duration; the principle follows [[7]](references.md#ref-7)). Define pilot segments before looking at results.
 - **Context B.** Treat the first 90 days of newly instrumented data as the baseline and compare each cohort with its own earlier trajectory (Judgement). DORA's Quick Check, its benchmark for delivery performance, offers an external reference point [[14]](references.md#ref-14).
+
+**Before either baseline can compare assisted with unassisted work, the work has to be labelled.** Most organisations can't yet do this, and it's worth checking before promising the comparison to anyone. The outcome history needs nothing new: lead time, review wait, change failure rate and escaped defects exist for the past already, and that is the "before". What's usually missing is the label saying which changes AI touched. How firm a comparison you can make depends on how that label is produced (Judgement):
+
+| Level | What you have | What you can say |
+| --- | --- | --- |
+| 0 | Team-level usage figures only | Compare each team with its own period before it started, if you know the start dates. The weakest, but usable |
+| 1 | A self-declared label on each pull request, such as a template checkbox or a commit trailer | Compare assisted with unassisted work, with an undercount you measure and report |
+| 2 | Tool telemetry linked to pull requests | A verified flag for most assisted work |
+| 3 | Agents with their own identities, linked to sessions | Agent-created work identified exactly |
+
+The cheapest sensible start is level 1 in one team for two to three weeks. Check a sample of labels by hand, record how many were right, fix what you find, then roll it out and start the comparison window from there ([template 6](templates.md#6-the-pull-request-addition) has the wording). Two traps are worth naming. Inferring AI use from change size or timing is circular, because those are the things being measured. And asking people to reconstruct their AI use from memory months later will mostly measure memory. Even with good labels, people choose to use AI where it suits them, so assisted and unassisted work differ in kind as well as in tooling, and the result stays correlational.
 
 ### 8.4 Judging an initiative
 

@@ -1,6 +1,19 @@
 # Changelog
 
-## Unreleased
+## v1.1.3 (10 October 2026)
+
+- Measurement readiness added. Section 8.3 now says that comparing assisted with
+  unassisted work needs the work to be labelled, sets out four levels of how
+  firm the comparison is, and suggests starting at a pull request label in one
+  team and checking a sample by hand. The levels and the start are marked
+  Judgement. No figure or source changed.
+- Readiness check is now fourteen questions. New question 11 asks whether you
+  can say which changes AI helped write; the later questions move up by one and
+  the reading table has a new row for it.
+- Template 8 added to templates.md: a brief to give an AI assistant that builds
+  or improves an AI-adoption dashboard, with definitions, segmentation,
+  independent validation and privacy rules. Template 3 and template 6 gain a
+  line each on recording and checking the label.
 
 - Template 7 added to templates.md: a pulse survey of twenty questions on use,
   perceived effect, trust, learning, concern and workload, with notes on running
