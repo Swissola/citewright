@@ -42,7 +42,7 @@ Adoption has outpaced the measurement of its value: 44.7% of surveyed organisati
 
 **Context A: established organisation.** A mature organisation with a sizeable technology function, a mix of older and newer systems, and a wide range of staff skills and attitudes to AI.
 
-**Context B: early-stage start-up.** A start-up about two years old. Leadership wants agentic quality assurance and AI good practice built in as foundations.
+**Context B: early-stage start-up.** A company about two years old, where leadership wants agentic quality assurance and AI good practice built in as foundations.
 
 **Questions addressed.**
 
