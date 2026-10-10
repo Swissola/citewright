@@ -26,3 +26,5 @@ scratch/
 # Secrets and local config
 .env
 .env.*
+# Raw export of the report, kept locally
+report-source.md
