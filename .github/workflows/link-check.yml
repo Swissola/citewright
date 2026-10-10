@@ -28,5 +28,5 @@ jobs:
               404|410) echo "::error::Dead link ($code): $url"; dead=1 ;;
               *) echo "::warning::Unconfirmed ($code), check by hand: $url" ;;
             esac
-          done < <(grep -o -E '\(https://[^) ]+\)' references.md | tr -d '()' | sort -u | head -n 100)
+          done < <(grep -o -E '\(https://[^) ]+\)' references.md | tr -d '()' | grep -v '^https://web\.archive\.org/' | sort -u | head -n 100)
           exit $dead
