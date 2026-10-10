@@ -15,7 +15,20 @@ The evidence in this repository is dated. This is the quarterly check that it st
 - [ ] Academic work on agent-written code and tests (MSR, arXiv): peer-reviewed versions of the preprints cited
 - [ ] ICO and other UK guidance on AI and data protection: anything newer than the 2023 summary cited
 
-## 2 Check what is already there
+## 2 Fetch what needs a person
+
+Some reports sit behind a sign-up form, or block automated downloads, so they have to be fetched by hand. Save each PDF in `.local/sources/` (git-ignored) and ask Claude to check the figures against it. Where a link below is a form, the report's registration page is in `references.md`.
+
+- [ ] Faros AI Engineering Report (registration form): https://www.faros.ai/research/ai-acceleration-whiplash
+- [ ] Faros follow-up report (registration form): https://www.faros.ai/research/speed-trap
+- [ ] Lightrun State of AI-Powered Engineering (registration form): https://lightrun.com/ebooks/state-of-ai-powered-engineering-2026
+- [ ] World Quality Report (registration form; the direct PDF link is in reference 8 and opens in a browser, but not to scripts): https://www.opentext.com/world-quality-report
+- [ ] PractiTest State of Testing (the 2026 edition had no public copy in October 2026): https://www.practitest.com/state-of-testing/
+- [ ] McKinsey State of AI (opens in a browser, not to scripts): https://www.mckinsey.com/featured-insights/mckinsey-global-surveys/the-state-of-ai
+
+The DORA, DX, LinearB, Undo and earlier PractiTest reports download directly, and can be fetched by script.
+
+## 3 Check what is already there
 
 - [ ] Run the link check workflow and look at the warnings
 - [ ] Check each archive link in `references.md` still opens
@@ -23,7 +36,7 @@ The evidence in this repository is dated. This is the quarterly check that it st
 - [ ] Re-open the gated reports that were read in full and confirm the figures still match their current versions
 - [ ] Look at the open questions in Section 9. Has any gap been filled?
 
-## 3 If something changed
+## 4 If something changed
 
 - [ ] Prefer the primary source. Do not edit a figure without reading the source itself
 - [ ] Update `references.md` and `evidence-register.md`, and keep the grade rules in `README.md`
@@ -31,7 +44,7 @@ The evidence in this repository is dated. This is the quarterly check that it st
 - [ ] Re-grade only where the evidence has changed, and say why in the register caveat
 - [ ] Update the "evidence current to" date in `README.md`, `report.md`, `executive-brief.md`, `references.md` and `CLAUDE.md`
 
-## 4 Before publishing
+## 5 Before publishing
 
 - [ ] Run the private-terms sweep, then the em dash and email checks
 - [ ] Add a dated `CHANGELOG.md` entry and bump the edition in `README.md` and `CITATION.cff`

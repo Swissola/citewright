@@ -6,6 +6,8 @@
   January, April, July and October, assigned to the repository owner, with the
   refresh checklist in .github/refresh-checklist.md. It can also be run by hand
   as a dry run.
+  The checklist now lists the reports that must be fetched by hand and where to
+  save them.
 
 ## v1.1.2 (10 October 2026)
 
