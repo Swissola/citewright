@@ -1,0 +1,47 @@
+name: Content checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: No em dashes or email addresses in tracked text
+        shell: bash
+        run: |
+          files=$(git ls-files '*.md' '*.cff' '*.yml')
+          fail=0
+          if grep -n -P '\x{2014}' $files; then echo "::error::Em dash found"; fail=1; fi
+          if grep -n -E '[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[A-Za-z]+' $files; then
+            echo "::error::Email address found"; fail=1
+          fi
+          exit $fail
+
+      - name: Private terms sweep
+        shell: bash
+        env:
+          SWEEP_TERMS: ${{ secrets.SWEEP_TERMS }}
+        run: |
+          # Terms are private. Report file names only, never the matching text.
+          if [ -z "$SWEEP_TERMS" ]; then
+            echo "::warning::SWEEP_TERMS secret is not available (expected on fork pull requests). Sweep skipped."
+            exit 0
+          fi
+          printf '%s\n' "$SWEEP_TERMS" | grep -v '^[[:space:]]*$' > "$RUNNER_TEMP/terms.txt"
+          hits=$(git ls-files -z | xargs -0 grep -i -l -F -f "$RUNNER_TEMP/terms.txt" || true)
+          rm -f "$RUNNER_TEMP/terms.txt"
+          if [ -n "$hits" ]; then
+            echo "::error::Private term found in: $hits"
+            exit 1
+          fi
+          echo "Sweep clean"
