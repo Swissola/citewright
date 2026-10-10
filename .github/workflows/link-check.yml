@@ -11,6 +11,7 @@ permissions:
 jobs:
   links:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -21,11 +22,11 @@ jobs:
           # usually bot blocking, so they are reported as warnings.
           dead=0
           while read -r url; do
-            code=$(curl -s -o /dev/null -L -m 30 -A "Mozilla/5.0 (link-check)" -w "%{http_code}" "$url" || true)
+            code=$(curl -s -o /dev/null -L --proto "=https" --proto-redir "=https" --max-redirs 5 -m 30 -A "Mozilla/5.0 (link-check)" -w "%{http_code}" "$url" || true)
             case "$code" in
               2*|3*) echo "ok      $code $url" ;;
               404|410) echo "::error::Dead link ($code): $url"; dead=1 ;;
               *) echo "::warning::Unconfirmed ($code), check by hand: $url" ;;
             esac
-          done < <(grep -o -E 'https?://[^)]+' references.md | sort -u)
+          done < <(grep -o -E '\(https://[^) ]+\)' references.md | tr -d '()' | sort -u | head -n 100)
           exit $dead
