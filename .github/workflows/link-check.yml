@@ -1,0 +1,31 @@
+name: Link check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check URLs in references.md
+        shell: bash
+        run: |
+          # Fails only on 404 or 410. Other failures (timeouts, 403, resets) are
+          # usually bot blocking, so they are reported as warnings.
+          dead=0
+          while read -r url; do
+            code=$(curl -s -o /dev/null -L -m 30 -A "Mozilla/5.0 (link-check)" -w "%{http_code}" "$url" || true)
+            case "$code" in
+              2*|3*) echo "ok      $code $url" ;;
+              404|410) echo "::error::Dead link ($code): $url"; dead=1 ;;
+              *) echo "::warning::Unconfirmed ($code), check by hand: $url" ;;
+            esac
+          done < <(grep -o -E 'https?://[^)]+' references.md | sort -u)
+          exit $dead
