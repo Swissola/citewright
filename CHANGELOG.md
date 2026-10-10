@@ -2,7 +2,7 @@
 
 ## Unreleased (10 October 2026)
 
-- Wayback Machine capture links added beside 32 of the 34 source URLs in
+- Wayback Machine capture links added beside 33 of the 34 source URLs in
   references.md. The report text and the evidence register are unchanged.
 
 ## v1.0.0 (10 October 2026)
