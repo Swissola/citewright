@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Template 7 added to templates.md: a pulse survey of twenty questions on use,
+  perceived effect, trust, learning, concern and workload, with notes on running
+  it and reading the results.
 - Quarterly reminder added: a scheduled workflow opens an issue on the first of
   January, April, July and October, assigned to the repository owner, with the
   refresh checklist in .github/refresh-checklist.md. It can also be run by hand

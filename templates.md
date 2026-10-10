@@ -1,6 +1,6 @@
 # Templates
 
-Six starting points for putting the report's recommendations to work. They are the author's judgement (*Judgement*), not findings from a study, and they are not drawn from any particular organisation. Change anything that does not fit. Text in {braces} is a placeholder, and the example wording is there to show the level of detail to aim for.
+Seven starting points for putting the report's recommendations to work. They are the author's judgement (*Judgement*), not findings from a study, and they are not drawn from any particular organisation. Change anything that does not fit. Text in {braces} is a placeholder, and the example wording is there to show the level of detail to aim for.
 
 | Template | Report section it follows |
 | --- | --- |
@@ -10,6 +10,7 @@ Six starting points for putting the report's recommendations to work. They are t
 | [4 The decision rule and log](#4-the-decision-rule-and-log) | [Section 8.4](report.md#84-judging-an-initiative) |
 | [5 The verification lead](#5-the-verification-lead) | [Section 6.2](report.md#62-phased-plan) and [Section 6.3](report.md#63-agentic-qa-within-the-adoption-plan) |
 | [6 The pull request addition](#6-the-pull-request-addition) | Practices 3 and 5, [Section 4](report.md#4-practices-common-to-both-contexts) |
+| [7 The pulse survey](#7-the-pulse-survey) | The people layer, [Section 8.2](report.md#82-measures-by-layer) |
 
 ## 1 The one-page AI stance
 
@@ -148,3 +149,71 @@ Owner of this change (a named person): {name}
 What this was checked against: {requirement, test, reviewer's reading}
 Size and scope kept small enough to review properly:  [ ] yes
 ```
+
+## 7 The pulse survey
+
+The numbers from tools show use. A survey shows the part they cannot: trust, confidence, workload, skills and concern. Run it before the pilot, after the learning window, and then every quarter, with the same questions each time so the rounds can be compared. It is the "people" layer in [Section 8.2](report.md#82-measures-by-layer).
+
+It also lets you test one thing the evidence warns about. In a randomised trial, developers believed AI had made them faster when it had not [[4]](references.md#ref-4), so ask what people believe and then set it beside what the delivered data shows, by workstream. Treat any difference as a finding, not as people being wrong.
+
+**Running it**
+
+- Keep it anonymous. Report only groups above a minimum size you set in advance, for example five, and say so in the invitation.
+- Keep it to about five minutes. Drop any question you will not act on.
+- Say what will happen with the results, and share them back within a few weeks. A survey that vanishes teaches people not to answer.
+- Report by workstream and by broad role (for example developer, tester, data, other). Do not ask for names, team names small enough to identify people, or length of service.
+- Report the spread of answers, not only the average, and never use the results to rank teams or people.
+- Use a five-point scale, labelled at each end and in the middle, with "not applicable" where it fits. Ask about the work, not the person.
+
+**Questions**
+
+Use
+
+1. In a typical week, how often do you use AI tools for your work? (Never, less than weekly, weekly, most days, daily)
+2. What do you use them for? (Select all that apply: writing code, reviewing code, writing tests, test design or requirements, debugging, documentation, data analysis, something else, nothing)
+3. Do the approved tools cover what you need? (Fully, mostly, partly, not really)
+
+Perceived effect
+
+4. For the tasks where you use AI, how does it change the time they take? (Much longer, a little longer, no change, a little shorter, much shorter)
+5. How often does AI output need significant correction before you can use it? (Rarely, sometimes, often, almost always)
+6. How much of your working time goes on checking, correcting or reviewing AI output? (Almost none, a little, a fair amount, a lot)
+
+Trust and confidence
+
+7. How much do you trust the quality of AI output for your kind of work? (Not at all, a little, somewhat, mostly, completely) [[13]](references.md#ref-13)
+8. How confident are you that you can tell when AI output is wrong? (Not at all to very)
+9. How confident are you in using AI well for your work? (Not at all to very)
+
+Learning and policy
+
+10. Do you have time at work to learn to use AI on real tasks? (Protected time, sometimes, not really, no)
+11. Do you know what you may and may not put into AI tools? (Clear, mostly clear, unclear) [[26]](references.md#ref-26)
+
+Concerns
+
+12. How concerned are you about the effect of AI on your job or role over the next two years? (Not at all to very) [[11]](references.md#ref-11)
+13. How concerned are you that your own skills may weaken if you rely on AI? (Not at all to very)
+14. How comfortable would you be raising a concern about AI with your supervisor? (Not at all to very)
+
+Workload
+
+15. Has AI changed how much work you have to review or check? (A lot less, a little less, no change, a little more, a lot more)
+16. Overall, has AI changed your workload? (A lot lighter to a lot heavier)
+
+In your own words
+
+17. What is one thing that would make AI more useful for your work?
+18. What is one thing about AI at work that worries you?
+
+About you (for grouping only)
+
+19. Which workstream are you in?
+20. Which of these best describes your role? (Developer, tester or QA, data or analytics, other)
+
+**Reading the results**
+
+- Set questions 4 to 6 beside the delivered data for the same workstream: review time, merge rate, change failure rate. Where belief and data differ, that is the thing to look into.
+- Look for gaps between groups, such as developers against testers, or one workstream against another. They usually point at where the enablement is missing.
+- Watch questions 7, 8, 12 and 14 over the rounds. Falling trust or rising concern after a rollout is an early warning, and it is cheaper to hear it here than from attrition.
+- Questions 17 and 18 are the most useful answers. Read them all, and group them.
