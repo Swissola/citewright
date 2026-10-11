@@ -23,10 +23,9 @@ Some reports sit behind a sign-up form, or block automated downloads, so they ha
 - [ ] Faros follow-up report (registration form): https://www.faros.ai/research/speed-trap
 - [ ] Lightrun State of AI-Powered Engineering (registration form): https://lightrun.com/ebooks/state-of-ai-powered-engineering-2026
 - [ ] World Quality Report (registration form; the direct PDF link is in reference 8 and opens in a browser, but not to scripts): https://www.opentext.com/world-quality-report
-- [ ] PractiTest State of Testing (the 2026 edition had no public copy in October 2026): https://www.practitest.com/state-of-testing/
 - [ ] McKinsey State of AI (opens in a browser, not to scripts): https://www.mckinsey.com/featured-insights/mckinsey-global-surveys/the-state-of-ai
 
-The DORA, DX, LinearB, Undo and earlier PractiTest reports download directly, and can be fetched by script.
+The DORA, DX, LinearB, Undo and earlier PractiTest reports download directly, and can be fetched by script. The PractiTest 2026 report is a web page rather than a PDF (https://www.practitest.com/state-of-testing/), so save the page text and check whether a later edition has replaced it.
 
 ## 3 Check what is already there
 

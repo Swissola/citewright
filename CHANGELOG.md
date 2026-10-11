@@ -1,5 +1,56 @@
 # Changelog
 
+## v1.1.4 (11 October 2026)
+
+- PractiTest 2026 figure now checked against the primary source. The 2026
+  State of Testing report turned out to be public, as a web page rather than a
+  PDF, and it gives 76.8% for "Do you currently use AI in your organization?".
+  New reference 32 links it, with an existing Wayback capture. The figure no
+  longer cites reference 21 (TestDino), which stays for the self-healing test
+  point.
+- Wording in Section 3.1 changed from "76.8% of testers reported using AI" to
+  76.8% of respondents saying they used AI in their organisation, which is what
+  the question asked. The register notes that the three years of figures are
+  worded differently and that the page gives no respondent count or survey
+  dates.
+- The two starting points are now named the same way throughout: the Company A
+  Context and the Company B Context, replacing "Context A" and "Context B".
+  The abstract introduces them where it first uses them, rather than leaving
+  the definitions to the next paragraph. Section headings, their links in the
+  executive brief and readiness check, the table headers and the two timeline
+  charts are updated to match. No figure or source changed.
+- Section 7 gains a table of DORA's seven capabilities with a reading for each
+  context, all marked Judgement because DORA does not split them by type of
+  organisation. Section 3.3 points to it, and its list of the seven now starts
+  each item with a capital.
+- Section 3.6 splits its practitioner guidance into two bullets and explains
+  deterministic checks and the bounded behavioural envelope, with an example
+  of each taken from the two sources. Both stay grade C.
+- Section 9 trimmed from eleven limitations to seven. The three single-source
+  caveats (METR, Stanford, the case evidence) are grouped under one heading;
+  the "partial access" item, which contradicted its own table, is reworked as
+  "how each source was read"; the agentic-QA and test-study items are merged;
+  and the duplicate "exclusions" item is dropped, its detail folded into
+  Section 2. Section 9 no longer says the 2026 testing figure is second-hand.
+- Repetition trimmed elsewhere: the two agentic-QA hypotheses in Section 6.1
+  are folded into one that points to Section 6.3, and the Section 3.4 evidence
+  note points to Section 9 rather than restating the vendor-and-correlational
+  caveat in full.
+- Byline date moved to 11 October 2026 to match this edition. The "evidence
+  current to 10 October 2026" line is unchanged.
+- Copywriting pass over the other documents. The executive brief's confidence
+  paragraph no longer calls the agentic-QA evidence weak twice. The decision
+  rule in template 4 now says "verification" to match the report's decision
+  table. The readiness check and README needed no change.
+- Added a markdownlint config (`.markdownlint-cli2.jsonc`) so the formatting
+  check runs clean. It turns off the rules that fight the report's deliberate
+  style (long prose lines, the citation anchors in references.md, bold
+  sub-labels, the survey's 1-to-20 numbering) and ignores the issue-body
+  checklist and private notes. README.md and CLAUDE.md gained a trailing
+  newline. The
+  refresh checklist moves the PractiTest page from the hand-fetch list to the
+  scripted one.
+
 ## v1.1.3 (10 October 2026)
 
 - Measurement readiness added. Section 8.3 now says that comparing assisted with

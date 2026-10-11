@@ -10,7 +10,7 @@ points: an established organisation and a start-up about two years old. Every
 figure is attributed to a source and graded for strength, and anything that is
 the author's judgement is labelled as such.
 
-*Evidence current to 10 October 2026. Edition: v1.1.3.*
+*Evidence current to 10 October 2026. Edition: v1.1.4.*
 
 ## Start here
 

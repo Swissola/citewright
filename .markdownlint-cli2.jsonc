@@ -1,0 +1,18 @@
+{
+  // citewright is long-form prose with deliberate formatting. A few markdownlint
+  // defaults fight that style, so they are turned off in "config"; every other
+  // rule stays on, which keeps the formatting check meaningful. "ignores" lists
+  // files that are not documents and should not be linted at all.
+  "config": {
+    "default": true,
+    "MD013": false, // line length: each paragraph is one unwrapped line
+    "MD033": false, // inline HTML: references.md needs <a id="ref-N"> citation anchors
+    "MD036": false, // emphasis as heading: the bold sub-labels are intentional
+    "MD029": false  // ordered-list prefix: survey questions run 1-20 across groups and are referenced by number
+  },
+  "ignores": [
+    ".local",            // private working notes, git-ignored
+    "node_modules",
+    ".github/refresh-checklist.md" // a GitHub issue body, not a document
+  ]
+}

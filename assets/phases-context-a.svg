@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 242" width="720" height="242" role="img" aria-labelledby="t d">
-  <title id="t">Context A: staged over 12 to 18 months</title>
+  <title id="t">Company A Context: staged over 12 to 18 months</title>
   <desc id="d">Four phases for an established organisation: foundation and baseline in weeks 0 to 8, pilot in weeks 8 to 24, scale in months 6 to 12, embed in months 12 to 18.</desc>
   <style>
     :root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --axis:#c3c2b7;
@@ -15,7 +15,7 @@
     .muted { fill: var(--muted); font-size: 12px; }
   </style>
   <rect width="720" height="242" rx="8" fill="var(--surface)"/>
-  <text x="24" y="32" class="title">Context A: staged over 12 to 18 months</text>
+  <text x="24" y="32" class="title">Company A Context: staged over 12 to 18 months</text>
   <text x="24" y="53" class="small">Each phase ends on evidence agreed in advance.</text>
   <text x="24" y="86" class="strong small">0 Foundation and baseline</text>
   <rect x="24" y="96" width="166" height="24" rx="4" fill="var(--s1)"/>

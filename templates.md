@@ -101,7 +101,7 @@ Agree the rule before the pilot, then record each decision against it. The thres
 ```text
 Decision rule (agreed {date} by {names})
 Scale:            flow improves or holds; quality and stability hold; trust stable or rising.
-Pause:            flow improves but quality or stability worsens. Fix checking and review
+Pause:            flow improves but quality or stability worsens. Fix verification and review
                   capacity before scaling.
 Stop or redesign: flow and quality flat after the learning window; trust falling.
 Mixed segments:   continue only in the segments that pass.
