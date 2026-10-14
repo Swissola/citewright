@@ -24,5 +24,7 @@ Evidence current to 10 October 2026.
 
 - Keep sections numbered as in report.md. Add a dated CHANGELOG.md entry for
   every substantive change. Run link and formatting checks before committing.
+- After cutting a release, update the external repo index to match the new
+  edition and source count.
 - Expected files: README.md, report.md, evidence-register.md, references.md,
   CHANGELOG.md, CITATION.cff, LICENSE.
