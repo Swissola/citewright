@@ -21,6 +21,7 @@ Some reports sit behind a sign-up form, or block automated downloads, so they ha
 
 - [ ] Faros AI Engineering Report (registration form): https://www.faros.ai/research/ai-acceleration-whiplash
 - [ ] Faros follow-up report (registration form): https://www.faros.ai/research/speed-trap
+- [ ] Faros field guide to measuring token efficiency (registration form): https://www.faros.ai/resources/token-efficiency-field-guide
 - [ ] Lightrun State of AI-Powered Engineering (registration form): https://lightrun.com/ebooks/state-of-ai-powered-engineering-2026
 - [ ] World Quality Report (registration form; the direct PDF link is in reference 8 and opens in a browser, but not to scripts): https://www.opentext.com/world-quality-report
 - [ ] McKinsey State of AI (opens in a browser, not to scripts): https://www.mckinsey.com/featured-insights/mckinsey-global-surveys/the-state-of-ai

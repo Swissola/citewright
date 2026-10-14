@@ -1,5 +1,27 @@
 # Changelog
 
+## v1.1.5 (14 October 2026)
+
+- Reviewed Faros's field guide to measuring token efficiency. It carries no new
+  evidence: every figure in it is drawn from the AI Engineering Report 2026,
+  already cited as reference 22 and read in full. Its own contribution is a
+  measurement framework, so that is what has been folded in.
+- New reference 33 links the field guide, with its companion article and the
+  gated guide page, both with existing archive captures. A register row records
+  it as vendor guidance, grade C, noting its figures restate reference 22.
+- Section 8.2 now notes the field guide's four-category lens (adoption,
+  productivity, quality, outcomes) as external corroboration of the report's six
+  measurement layers and of Principle 3, that token spend is an input to trace to
+  delivered work, not an outcome in itself.
+- Section 3.4 surfaces three figures from reference 22 that the v1.1.2 trim had
+  left to the register: bugs per developer up 54%, up from a 9% rise in the prior
+  dataset; median time in pull request review up 441.5%; and lead time from
+  commit to production up 480.4%, with the caveat that only about one
+  organisation in ten instruments lead time and the figure varies widely. The
+  register row for reference 22 gains the same figures.
+- No source or grade changed for any existing figure. Evidence remains current
+  to 10 October 2026, since the field guide and reference 22 both predate it.
+
 ## v1.1.4 (11 October 2026)
 
 - PractiTest 2026 figure now checked against the primary source. The 2026
